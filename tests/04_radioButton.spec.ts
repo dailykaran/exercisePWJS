@@ -10,7 +10,7 @@ test('verify the radio button', async ({page}) => {
 
 }) 
 
-test.only('verify the buttons', async ({page}) => {
+test('verify the buttons', async ({page}) => {
     await page.goto('https://demoqa.com/buttons');
     
     await page.locator('#rightClickBtn').click({button: "right"});

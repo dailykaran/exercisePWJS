@@ -16,7 +16,7 @@ test('verify the text box', async ({page}) => {
     expect(page.locator('#output p').first()).toContainText('Green')
 })
 
-test.only('verify the check box', async ({page}) => {
+test('verify the check box', async ({page}) => {
 
     await page.goto('https://demoqa.com/checkbox');
     await page.getByLabel('Toggle').click();

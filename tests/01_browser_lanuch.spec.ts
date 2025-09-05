@@ -1,7 +1,7 @@
 import {test, chromium, firefox} from "@playwright/test"
 
 
-test.only('firefox test', async()=> {
+test('firefox test', async()=> {
     const browser = await firefox.launch();
     const browserContext = await browser.newContext();
     const page = await browserContext.newPage();
